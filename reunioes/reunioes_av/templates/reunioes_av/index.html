@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reuniões AV</title>
+</head>
+<body>
+    {%  for reuniao_av in reunioes_av%}
+    <div class="container">
+        <h3>Nome: {{reuniao_av.nome}}</h3>
+        <h4>Titulo: {{reuniao_av.titulo}} </h4>
+        <p>Descrição: {{reuniao_av.descricao}} </p>
+        <h5>Local: {{reuniao_av.local}} </h5>
+        <h5>Dia: {{reuniao_av.dia}} </h5>
+        <h5>Horário: {{reuniao_av.horario}} </h5>
+    </div>
+    {% endfor %}
+</body>
+</html>
